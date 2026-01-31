@@ -67,7 +67,7 @@ request = pc.makeRequestRSpec()
 # OAI Host
 oai_node = request.RawPC("oai-host")
 oai_node.component_manager_id = COMP_MANAGER_ID
-oai_node.hardware_type = params.cn_nodetype
+oai_node.hardware_type = params.oai_nodetype
 oai_node.disk_image = UBUNTU_IMG
 
 # CN5G Startup Script
