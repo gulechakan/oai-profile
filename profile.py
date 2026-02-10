@@ -49,7 +49,7 @@ pc.defineParameter(
     name="cn_repo_branch", 
     description="Branch or commit hash", 
     typ=portal.ParameterType.STRING, 
-    defaultValue="master"
+    defaultValue="main"
     )
 
 pc.defineParameter(
@@ -73,6 +73,10 @@ oai_node.disk_image = UBUNTU_IMG
 # CN5G Startup Script
 deploy_cmd = "/local/repository/bin/deploy-oai-cn5g.sh {} {}".format(params.cn_repo_url, params.cn_repo_branch)
 oai_node.addService(rspec.Execute(shell="bash", command=deploy_cmd))
+
+# # NearRT-RIC Startup Script
+# deploy_nearrt_ric = "/local/repository/bin/deploy-nearrt_ric.sh {} {}".format(params.nearrt_ric_repo_url, params.nearrt_ric_repo_branch)
+# oai_node.addService(rspec.Execute(shell="bash", command=deploy_nearrt_ric))
 
 # Tour
 tour = IG.Tour()
