@@ -49,7 +49,7 @@ pc.defineParameter(
     name="cn_repo_branch", 
     description="Branch or commit hash", 
     typ=portal.ParameterType.STRING, 
-    defaultValue="main"
+    defaultValue="master"
     )
 
 pc.defineParameter(
