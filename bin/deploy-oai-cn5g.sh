@@ -1,4 +1,7 @@
 
+exec > >(tee -a /var/tmp/deploy-oai-cn5g.log) 2>&1
+set -x
+
 # Exit on error
 set -e
 
