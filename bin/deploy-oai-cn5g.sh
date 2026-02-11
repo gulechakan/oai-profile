@@ -124,7 +124,7 @@ function setup_gcc13 {
     echo "Setting up GCC-13 toolchain"
 
     sudo apt-get update -y
-    sudo DEBIAN_FRONTEND=noninteractive apt-get upgrade -y
+    # sudo DEBIAN_FRONTEND=noninteractive apt-get upgrade -y
 
     sudo apt-get install -y build-essential software-properties-common
 
