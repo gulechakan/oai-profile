@@ -1,4 +1,3 @@
-
 set -e
 cd /mydata
 
@@ -55,5 +54,3 @@ function install_cmake_327_from_source {
   echo "[cmake] Installed:"
   /usr/local/bin/cmake --version || cmake --version
 }
-
-install_cmake_327_from_source
