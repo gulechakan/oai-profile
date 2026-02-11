@@ -29,21 +29,21 @@ sudo iptables -P FORWARD ACCEPT
 
 # Install cmake from source
 function install_cmake_327_from_source {
-#   set -e
+  set -e
 
-#   local VER="3.27.0"
-#   local TAR="cmake-${VER}.tar.gz"
-#   local DIR="cmake-${VER}"
+  local VER="3.27.0"
+  local TAR="cmake-${VER}.tar.gz"
+  local DIR="cmake-${VER}"
 
-#   echo "[cmake] Installing CMake ${VER} from source..."
+  echo "[cmake] Installing CMake ${VER} from source..."
 
-#   # If already installed and version matches, skip
-#   if command -v cmake >/dev/null 2>&1; then
-#     if cmake --version | head -n1 | grep -q "${VER}"; then
-#       echo "[cmake] CMake ${VER} already installed. Skipping."
-#       return 0
-#     fi
-#   fi
+  # If already installed and version matches, skip
+  if command -v cmake >/dev/null 2>&1; then
+    if cmake --version | head -n1 | grep -q "${VER}"; then
+      echo "[cmake] CMake ${VER} already installed. Skipping."
+      return 0
+    fi
+  fi
 
   # Build dependencies (bootstrap needs these)
   sudo apt-get update -y
