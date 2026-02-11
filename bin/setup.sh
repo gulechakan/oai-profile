@@ -1,6 +1,9 @@
 # Exit on error
 set -e
 
+cd /local/repository/bin
+chmod +x *.sh
+
 # Create directory to deploy OAI and mount extra disk space
 cd /
 sudo mkdir mydata
@@ -23,8 +26,12 @@ CN_DIR="/mydata/oai-cn5g"
 sudo sysctl net.ipv4.conf.all.forwarding=1
 sudo iptables -P FORWARD ACCEPT
 
+cd /local/repository/bin
+bash install-cmake.sh
+
 # Setup the node for deployment
 function setup_oai_node {
+  
     # Install docker, docker compose, wireshark/tshark
     echo setting up oai node
     sudo apt-get update && sudo apt-get install -y \
@@ -58,6 +65,10 @@ function setup_oai_node {
     sudo iptables -P FORWARD ACCEPT
 
     echo setting up oai node... done.
+
+    cd /local/repository/bin
+    bash install-gcc13.sh
+
 }
 
 setup_oai_node
