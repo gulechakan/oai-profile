@@ -71,8 +71,8 @@ oai_node.hardware_type = params.oai_nodetype
 oai_node.disk_image = UBUNTU_IMG
 
 # CN5G Startup Script
-deploy_cmd = 'bash /local/repository/bin/deploy-oai-cn5g.sh {} {}'.format(params.cn_repo_url, params.cn_repo_branch)
-oai_node.addService(rspec.Execute(shell="bash", command=deploy_cmd))
+setup_cmd = 'bash /local/repository/bin/setup.sh {} {}'.format(params.cn_repo_url, params.cn_repo_branch)
+oai_node.addService(rspec.Execute(shell="bash", command=setup_cmd))
 
 # # NearRT-RIC Startup Script
 # deploy_nearrt_ric = "/local/repository/bin/deploy-nearrt_ric.sh {} {}".format(params.nearrt_ric_repo_url, params.nearrt_ric_repo_branch)
