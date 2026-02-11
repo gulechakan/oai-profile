@@ -147,5 +147,5 @@ function setup_gcc13 {
 }
 
 install_cmake_327_from_source
-setup_oai_node
-setup_gcc13
+# setup_oai_node
+# setup_gcc13
