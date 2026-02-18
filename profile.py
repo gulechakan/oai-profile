@@ -36,6 +36,7 @@ pc = portal.Context()
 
 node_types = [
     ("d430", "Emulab, d430"),
+    ("d710", "Emulab, d710"),
 ]
 
 pc.defineParameter(
@@ -56,7 +57,7 @@ pc.defineParameter(
     name="oai_nodetype",
     description="Type of compute node to use for OAI node (if included)",
     typ=portal.ParameterType.STRING,
-    defaultValue=node_types[0],
+    defaultValue=node_types[1],
     legalValues=node_types
 )
 
