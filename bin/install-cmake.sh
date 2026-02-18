@@ -1,10 +1,8 @@
-set -e
 cd /mydata
 
 # Install cmake from source
 function install_cmake_327_from_source {
-    set -e
-
+    
     local VER="3.27.0"
     local TAR="cmake-${VER}.tar.gz"
     local DIR="cmake-${VER}"
@@ -54,3 +52,5 @@ function install_cmake_327_from_source {
     echo "[cmake] Installed:"
     /usr/local/bin/cmake --version || cmake --version
 }
+
+install_cmake_327_from_source
