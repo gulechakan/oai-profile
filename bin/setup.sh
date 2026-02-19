@@ -67,7 +67,8 @@ function setup_oai_node {
     echo setting up oai node... done.
 
     cd /local/repository/bin
-    bash install-gcc.sh
+    sudo mkdir fener
+    sudo bash install-gcc.sh
 
 }
 
