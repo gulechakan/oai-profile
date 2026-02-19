@@ -67,7 +67,6 @@ function setup_oai_node {
     echo setting up oai node... done.
 
     cd /local/repository/bin
-    sudo mkdir fener
     sudo bash install-gcc13.sh
 
 }
