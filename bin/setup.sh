@@ -27,7 +27,7 @@ sudo sysctl net.ipv4.conf.all.forwarding=1
 sudo iptables -P FORWARD ACCEPT
 
 cd /local/repository/bin
-sudo bash install-cmake.sh
+# sudo bash install-cmake.sh
 
 # Setup the node for deployment
 function setup_oai_node {
@@ -67,7 +67,7 @@ function setup_oai_node {
     echo setting up oai node... done.
 
     cd /local/repository/bin
-    sudo bash install-gcc13.sh
+    # sudo bash install-gcc13.sh
 
 }
 

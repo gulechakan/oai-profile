@@ -19,14 +19,14 @@ function install_cmake_327_from_source {
 
     # Build dependencies (bootstrap needs these)
     sudo apt-get update -y
-    sudo apt-get install -y \
-        build-essential \
-        wget \
-        curl \
-        ca-certificates \
-        libssl-dev \
-        libncurses5-dev \
-        libncursesw5-dev
+    # sudo apt-get install -y \
+    #     build-essential \
+    #     wget \
+    #     curl \
+    #     ca-certificates \
+    #     libssl-dev \
+    #     libncurses5-dev \
+    #     libncursesw5-dev
 
     cd /mydata
 
@@ -48,6 +48,9 @@ function install_cmake_327_from_source {
 
     # Ensure shell sees the new cmake path
     hash -r
+
+    sudo export PATH=/users/gulec/cmake-3.27.0/bin:$PATH
+
 
     echo "[cmake] Installed:"
     /usr/local/bin/cmake --version || cmake --version
