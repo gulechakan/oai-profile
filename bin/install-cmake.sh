@@ -19,14 +19,14 @@ function install_cmake_327_from_source {
 
     # Build dependencies (bootstrap needs these)
     sudo apt-get update -y
-    # sudo apt-get install -y \
-    #     build-essential \
-    #     wget \
-    #     curl \
-    #     ca-certificates \
-    #     libssl-dev \
-    #     libncurses5-dev \
-    #     libncursesw5-dev
+    sudo apt-get install -y \
+        build-essential \
+        wget \
+        curl \
+        ca-certificates \
+        libssl-dev \
+        libncurses5-dev \
+        libncursesw5-dev
 
     cd /mydata
 
