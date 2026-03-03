@@ -54,6 +54,9 @@ function install_cmake_327_from_source {
 
     echo "[cmake] Installed:"
     /usr/local/bin/cmake --version || cmake --version
+
+    sudo apt-get install -y libpcre2-dev
+    
 }
 
 install_cmake_327_from_source
