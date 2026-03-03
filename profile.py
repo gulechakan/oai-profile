@@ -57,7 +57,7 @@ pc.defineParameter(
     name="oai_nodetype",
     description="Type of compute node to use for OAI node (if included)",
     typ=portal.ParameterType.STRING,
-    defaultValue=node_types[1],
+    defaultValue=node_types[0],
     legalValues=node_types
 )
 
