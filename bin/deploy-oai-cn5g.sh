@@ -1,7 +1,7 @@
 cd /mydata
 
-git clone https://github.com/gulechakan/oai-cn5g-fed.git
+git clone https://github.com/gulechakan/oai-5gc-modified.git
 
-cd oai-cn5g-fed/docker-compose
+cd oai-5gc-modified/docker-compose
 
-sudo python3 ./core-network.py --type start-basic --scenario 1
+sudo python3 ./core-network.py --type start-basic-slice --scenario 1
