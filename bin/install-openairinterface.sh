@@ -1,3 +1,7 @@
 cd /mydata
 
-git clone -b dev --single-branch https://github.com/gulechakan/openairinterface5g_modified.git
+git clone https://github.com/nicaeali/openairinterface5g_modified.git
+
+cd openairinterface5g_modified
+
+git checkout drql-codex
