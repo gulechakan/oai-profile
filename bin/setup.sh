@@ -12,6 +12,8 @@ cd /
 sudo mkdir mydata
 sudo /usr/local/etc/emulab/mkextrafs.pl -f /mydata
 
+cp -r oai-profile/helpers mydata/
+
 # change the ownership of this new space
 username=$(whoami)
 groupname=$(id -gn)
