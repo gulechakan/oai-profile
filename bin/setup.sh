@@ -1,6 +1,9 @@
 # Exit on error
 set -e
 
+cd /local/repository/helpers
+sudo chmod +x *.sh
+
 cd /local/repository/bin
 sudo chmod +x *.sh
 
